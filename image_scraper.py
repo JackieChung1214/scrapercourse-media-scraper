@@ -14,7 +14,7 @@ driver.get('https://pixabay.com/images/search/car/')
 #設定滾動捲軸,在此指定10次
 for i in range(10):
     driver.execute_script('window.scrollTo(0,document.body.scrollHeight)')
-    time.sleep(5)
+    time.sleep(20)
 
 #2.利用BeautifulSoup套件爬取網頁
 soup=BeautifulSoup(driver.page_source,'lxml')
