@@ -1,3 +1,4 @@
+#來練習Git版本控制
 #爬取證交所=>交易資訊=>上市公司季報 https://www.twse.com.tw/
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
