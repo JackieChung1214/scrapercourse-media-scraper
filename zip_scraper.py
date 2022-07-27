@@ -13,7 +13,8 @@ import zipfile
 driver=webdriver.Chrome(ChromeDriverManager().install())
 driver.get('https://www.twse.com.tw/zh/statistics/statisticsList?type=05&subType=225')
 
-select=Select(driver.find_element(By.ID,'d1')).find_element(By.CSS_SELECTOR,"select[name='yy']")
+#select=Select(driver.find_element(By.ID,'d1')).find_element(By.CSS_SELECTOR,"select[name='yy']"))
+select=Select(driver.find_element(By.ID,'d1').find_element(By.CSS_SELECTOR,"select[name='yy']"))
 select.select_by_value('2021')
 
 button=driver.find_element(By.CSS_SELECTOR,"a[class='button search']")
